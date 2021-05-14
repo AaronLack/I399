@@ -1,0 +1,42 @@
+<!-- Aaron Lack I399 SP21 Project 3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1> Quiz Project </h1>
+        <!-- The score -->
+        <p class="score">Score: <span></span></p>
+        <div class="move">
+            <!-- The time -->
+            <div id="time"><span class="time">Time:</span><span class="minutes">00</span>:<span class="seconds">00</span>:<span class="milliseconds">00</span></div>
+        </div>
+        <div class="quiz">
+            <!-- Use this to display questions 1 at a time -->
+        </div>
+        <div class="buttons">
+            <button type="submit" class="submit">Submit</button>
+            <!-- <button type="submit" class="next" hidden>Next</button> -->
+            <!-- <button type="submit" class="again">Play Again</button> -->
+        </div>
+        <div class="progress">
+            <!-- I put the ID's here to help change the color of the circles -->
+            <span class="circle" id='0'></span>
+            <span class="circle" id='1'></span>
+            <span class="circle" id='2'></span>
+            <span class="circle" id='3'></span>
+            <span class="circle" id='4'></span>
+        </div>
+    </div>
+    
+<script src="project3.js"></script>
+</body>
+</html>

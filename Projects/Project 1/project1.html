@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1> Guessing Game! </h1>
+        <p> Guess a number between 1 and 100 </p>
+        <p> Make a Guess: <input type ="text" id ="guess-number"/> <button>Go!</button> </p>
+        <p class="message"> </p>
+        <p> <button class="hide" id="play-again"> Play Again </button> </p>
+        <p> <button id="high-scores-button"> View High Scores </button> </p>
+        <!-- make this a link, calling the viewHighScoresMethod -->
+        <!-- <p class="scores"> view high scores </p> -->
+        <!-- Place with table of high scores -->
+        <!-- <span class="hide" id="high-scores"> </span> -->
+        
+        <div id="high-scores" hidden>
+            <h2>HIGH SCORES</h2>
+            <table></table>
+        </div>
+
+    </div>
+
+</body>
+</html>

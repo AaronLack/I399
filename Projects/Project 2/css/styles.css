@@ -1,0 +1,92 @@
+/* Aaron Lack I399 Project 2 */
+
+/* Box Model */
+html {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Centers content */
+.container {
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+h1,h2,h3,p {
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.numbers {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* border: 1px solid red; For testing purposes */
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#play-again {
+    font-size: 24px;
+    background-color: gold;
+    color: black;
+    border-radius: 5px;
+    /* border:  */
+}
+
+/* Hiding stuff */
+.hide {
+    display: none;
+}
+
+/* Puts color on the circles */
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: navy;
+    margin: 7px 15px;
+    transition: all .2 ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+/* Circles will grow on hover */
+.color:hover {
+    transform: scale(1.1);
+    background-color: yellow;
+    color: black;
+}
+
+.high {
+    background-color: turquoise;
+    color: black;
+}
+
+.low {
+    background-color: indigo;
+    color: white;
+}
+
+.correct {
+    background-color: seagreen;
+    color: white;
+}

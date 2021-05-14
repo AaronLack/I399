@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* UTILITIES */
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+body {
+    background-color: #e6ccff
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, p, td {
+    font-family: 'Arial', 'Gadget', sans-serif;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    background-color: #f2f2f2;
+    margin: 35px auto; /* centers the container */
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  
+} 
+td {
+    padding: 0.2em 0.5em;
+}
+tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.scores {
+    text-align: right;
+    padding-right: 5px;
+}
+
+#view-scores {
+    width: 600px;
+    background-color: #f2f2f2;;
+    margin: 35px auto; /* centers the container */
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+}
+/* Button Styling */
+.hide {
+    display: none;
+}
