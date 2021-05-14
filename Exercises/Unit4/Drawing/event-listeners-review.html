@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listener Review</title>
+</head>
+<body>
+  <button id="callback">Callback</button>
+  <button id="arrow">Arrow</button>
+  <script>
+    function handleButton(event) {
+      console.log(event);
+      // console.log(event.target);
+      // console.log(this.id);
+    }
+    document.querySelector('#callback').addEventListener('click', handleButton);
+    document.querySelector('#arrow').addEventListener('click', (event) => {
+      console.log(event);
+      // console.log(event.target);
+      // console.log(this.id);
+    });
+  </script>
+</body>
+</html>

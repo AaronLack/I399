@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo of the Element.closest() method</title>
+  <style>
+    article, div { border: 2px solid black; padding: 1.0em; margin: 2.0em;}
+    #div-01 { border-color: red; }
+    #div-02 { border-color: blue; }
+    #div-03 { border-color: gold; }
+    #div-04 { border-color: orange; }
+    #div-05 { border-color: purple; }
+    #div-06 { border-color: green; }
+    button { padding: 1.0em; margin: 1.0em; }
+  </style>
+</head>
+<body>
+
+  <article id="article-01" data-name="Ringo">
+    <div id="div-01">Here is div-01
+      <div id="div-02">Here is div-02
+        <div id="div-03">Here is div-03</div>
+        <button>Click Me!</button>
+      </div>
+    </div>
+  </article>
+
+  <article id="article-02" data-name="George">
+    <div id="div-04">Here is div-01
+      <div id="div-05">Here is div-02
+        <div id="div-06">Here is div-03</div>
+        <button>No, Click Me!</button>
+      </div>
+    </div>
+  </article>
+
+  <script src="demo-closest.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawing with Canvas</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="drawing.css">
+</head>
+<body>
+  <div class="canvas-wrapper">
+    <canvas width="1600" height="1000" id="canvas"></canvas>
+    <div id="controls">
+      <button class="clear">CLEAR</button>
+      <button class="erase" data-option="erase">ERASE</button>
+      <button class="black active" data-option="black">black</button>
+      <button class="wild" data-option="wild">wild</button>
+      <button class="random" data-option="random">random</button>
+      <button class="rainbow" data-option="rainbow">rainbow</button>
+      <p>Brush width:</p>
+      <div>
+        <input type="radio" id="thin" name="width" value="10">
+        <label for="thin">Thin</label>
+      </div>
+      <div>
+        <input type="radio" id="medium" name="width" value="20" checked>
+        <label for="medium">Medium</label>
+      </div>
+      <div>
+        <input type="radio" id="heavy" name="width" value="30">
+        <label for="thick">Thick</label>
+      </div>      
+    </div>
+  </div>
+  
+  <!-- Uncomment to see each step -->
+  <!-- <script src="./drawing-starter-0.js"></script> -->
+  <!-- <script src="./drawing-mouse-1.js"></script> -->
+  <!-- <script src="./drawing-keyboard-2.js"></script> -->
+  <script src="./drawing-complete-3.js"></script>
+</body>
+</html>

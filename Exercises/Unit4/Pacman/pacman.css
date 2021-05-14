@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url('pacman.png');
+}
+
+.pacman {
+  width: 33px;
+  position: relative;
+  --x: 0px;
+  --y: 0px;
+  --rotate: 0;
+  transform: translateX(var(--x)) translateY(var(--y)) rotate(var(--rotate));
+  transition: transform 0.2s;
+}
+

@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* ADD FLEX: rows that wrap */
+#color-blocks {
+    width: 600px;
+    margin: 100px auto 0;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+/* 
+    ADD: 150px black squares
+    ADD: white 24px Verdana text w/ text shadow
+    ADD FLEX: text content centered adds animation to smooth out transition transition: all .2s ease-in-out;
+*/
+
+.color {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    margin: 1.0em;
+    transition: all .2 ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+/* squares will grow on hover */
+.color:hover {
+    transform: scale(1.1);
+}

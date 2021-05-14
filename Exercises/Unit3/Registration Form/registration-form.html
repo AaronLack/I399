@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="registration-form.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <section>
+            <header>
+                <h3>Register</h3>
+                <h4>Required info marked with an asterisk</h4>
+            </header>
+            <main>
+                <form>
+                <ul>
+                    <li>
+                        <!-- Inputs -->
+                        <label for="name">Name: <abbr title="required" aria-label="required"><i class="fas fa-asterisk"></i></abbr></label>
+                        <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+                        <small><i class="fas fa-asterisk" aria-hidden="true"></i> required field</small>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="user_email" placeholder="Enter an email">
+                        <small><i class="fas fa-asterisk" aria-hidden="true"></i> email is not valid</small>
+                    </li>
+                    <li>
+                        <!-- Radio buttons -->
+                        <fieldset>
+                            <legend>Program</legend>
+                            <div class="flex-parent">
+                                <p>
+                                    <input type="radio" name="user_cost" id="student" value="20" checked>
+                                    <label for="male">Student $20</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="user_cost" id="faculty" value="40">
+                                    <label for="female">Faculty $40</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="user_cost" id="staff" value="30">
+                                    <label for="female">Staff $30</label>
+                                </p>
+                            </div>
+                        </fieldset>
+                        <small><i class="fas fa-asterisk" aria-hidden="true"></i> choose at least one</small>
+                    </li>
+                    <li>
+                        <!-- Checkboxes -->
+                        <fieldset>
+                            <legend>Are you 18 years or older?</legend>
+                            <p>
+                                <input id="age" type="checkbox" name="user_age" value="18+">
+                                <label for="age">I confirm I am 18 or older.</label>
+                            </p>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <!-- Checkboxes -->
+                        <fieldset>
+                            <legend>Add to Email List?</legend>
+                            <p>
+                                <input id="list" type="checkbox" name="add_to_list" value="add">
+                                <label for="list">Sign me up for monthly emails</label>
+                            </p>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <!-- More inputs -->
+                        <div>
+                            <label for="zipcode">Zipcode:</label>
+                            <input type="text" id="zipcode" name="user_zipcode" placeholder="Enter your zipcode">
+                            <small><i class="fas fa-asterisk" aria-hidden="true"></i> must be a number</small>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="user_phone" placeholder="Enter your phone number">
+                        <small><i class="fas fa-asterisk" aria-hidden="true"></i> must be 10 digits</small>
+                    </li>
+                    <li>
+                        <!-- Dropdown -->
+                        <label for="card">
+                        <select id="card" name="user_card">
+                            <option value="visa">Visa</option>
+                            <option value="mc">Mastercard</option>
+                            <option value="amex">American Express</option>
+                        </select>
+                    </li>
+                    <li>
+                        <!-- Text Area -->
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="user_comments"></textarea>
+                    </li>
+                    <li>
+                        <!-- Button -->
+                        <button type="submit">Submit</button>
+                    </li>
+                </ul>
+                </form>
+            </main>
+            <footer>
+                <p>Already have an account? <a href="#">Login</a></p>
+            </footer>
+            <i class="wave"></i>
+        </section>
+    </div>
+
+    <script src="./registration-form.js"></script>
+</body>
+
+</html>

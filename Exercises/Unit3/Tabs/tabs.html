@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./tabs.css">
+</head>
+
+<!-- 
+  https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute
+  https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role
+-->
+
+<body>
+    <div class="container">
+
+        <div class="tabs">
+            <div role="tablist" aria-label="Web Languages">
+                <button role="tab" aria-selected="true" id="html">
+                    HTML
+                </button>
+                <button role="tab" aria-selected="false" id="css">
+                    CSS
+                </button>
+                <button role="tab" aria-selected="false" id="js">
+                    JS
+                </button>
+            </div>
+
+            <div role="tabpanel" aria-labelledby="html">
+                <p>HTML gives our content meaning and structure.</p>
+            </div>
+            <div role="tabpanel" aria-labelledby="css" hidden>
+                <p>CSS allows us to layout content and make it beautiful.</p>
+                <p>
+            </div>
+            <div role="tabpanel" aria-labelledby="js" hidden>
+                <p>JS makes our interfaces more interactive!</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="./tabs.js"></script>
+</body>
+
+</html>

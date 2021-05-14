@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+article {
+  margin: 2em auto;
+  width: 600px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 1.0em 0 0.5em;
+}
+h2 {
+  font-size: 24px;
+  margin: 1.5em 0 0.5em;
+}
+h2.yes::before {
+  content: "✓ ";
+  font-size: 28px;
+}
+h2.no::before {
+  content: "𐄂 ";
+  font-size: 48px;
+}
+p {
+  font-size: 18px;
+  margin: 1.0em 0 0.5em;
+}
+.score {
+  font-size: 24px;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  background: purple;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 48px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+button:hover {
+  background-color: turquoise;
+  color: black;
+}

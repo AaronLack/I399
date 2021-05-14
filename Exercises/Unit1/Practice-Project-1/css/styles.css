@@ -1,0 +1,69 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+  Practice for Project 1
+*/
+
+body {
+  min-height: 100vh;
+  /* Add flexbox or grid to center on the page */
+  display: flex;
+  justify-content: center; /* Horixontal alignment */
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h2, p, button {
+  font-family: Helevetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+h2, p {
+  font-size: 36px;
+  margin: 0.15em 0 1.0em;
+}
+
+h2 {
+  font-size: 36px;
+  margin: 0.15em 0;
+}
+
+.color-code {
+  font-size: 72px;
+  margin: 0.15em 0 0.5em;
+}
+
+.color-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 1.0rem 1.5rem;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  color: #333333;
+  background: rgb(255,255,255);
+  font-size: 1.0rem;
+  text-transform: lowercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.color-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.light {
+  color: black;
+}
+
+.dark {
+  color: white;
+}

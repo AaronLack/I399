@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+</head>
+<style>
+  /* apply a natural box layout model to all elements */
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+    background: snow;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
+  }
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3.0rem 0;
+  }
+  h1 {
+    font-size: 64px;
+    color: snow;
+    text-shadow: 2px 2px 2px rgb(191, 191, 191);
+    text-align: center;
+  }
+  button { 
+    padding: 1.0em 2.0em;
+    background-color: white;
+    border: 1px solid lightpink;
+    border-radius: 3px;
+    transition: all 0.2s;
+  }
+  button:hover {
+    border: 1px solid white;
+    background-color: lightpink;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 2.0rem;
+  }
+  .card {
+    background: white;
+    padding: 1.0rem;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px lightgrey;
+  }
+  .card img {
+    width: 100%;
+  }
+  .card h2 {
+    color: black;
+  }
+  .modal-outer {
+    display: grid;
+    background: rgba(237, 237, 237, 0.7);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;  /* Hide this modal until we need it */
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .modal-outer.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .modal-inner {
+    max-width: 600px;
+    min-width: 400px;
+    padding: 2.0rem;
+    border-radius: 6px;
+    min-height: 200px;
+    background: white;
+    box-shadow: 1px 1px 1px lightgrey;
+  }
+  .modal-outer.open .modal-inner {
+    transform: translateY(0);
+  }
+  .modal-desc {
+    display: flex;
+  }
+  .modal-img {
+    display: block;
+    min-width: 150px;
+    height: 200px;
+    padding: 1.0em 0 1.0em 2.0em;
+  }
+</style>
+<body>
+  <div class="container">
+    <h1>The Beatles</h1>
+    <!-- Placeholder images from: https://source.unsplash.com/ -->
+    <div class="cards">
+      <div class="card" data-name="john">
+        <img src="https://source.unsplash.com/random/200x200?{music, imagine, 60s, piano}" alt="John Lennon">
+        <h2>John Lennon</h2>
+        <button>Learn more</button>
+      </div>
+      <div class="card" data-name="paul">
+        <img src="https://source.unsplash.com/random/200x200?{records, beatles, volkswagon}" alt="Paul McCartney">
+        <h2>Paul McCartney</h2>
+        <button>Learn more</button>
+      </div>
+      <div class="card" data-name="george">
+        <img src="https://source.unsplash.com/random/200x200?{beatles, guitars, sun}" alt="George Harrison">
+        <h2>George Harrison</h2>
+        <button>Learn more</button>
+      </div>
+      <div class="card" data-name="ringo">
+        <img src="https://source.unsplash.com/random/200x200?{drums, beatles, octopus}" alt="Ringo Starr">
+        <h2>Ringo Starr</h2>
+        <button>Learn more</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-outer">
+    <div class="modal-inner">
+    </div>
+  </div>
+
+  <script src="./modal-starter.js"></script>
+</body>
+</html>

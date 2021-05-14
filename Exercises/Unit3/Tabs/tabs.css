@@ -1,0 +1,38 @@
+button {
+  background: var(--gold);
+  border: 0;
+  color: black;
+  border-radius: 5px 5px 0 0;
+  --bs-color: rgba(0,0,0,0.1);
+  box-shadow: inset 0 -2px 5px var(--bs-color);
+  cursor:pointer;
+}
+
+/* ! LOOK AT THIS MAGIC. LOOK. AT. IT. */
+button[aria-selected="true"] {
+  background: white;
+  box-shadow: none;
+  color: rgba(0,0,0,0.7);
+}
+
+/* TODO: Figure out what this does */
+button:focus {
+  outline: 0;
+  --bs-color: rgba(0,0,0,0.6);
+}
+
+/* TODO: Use CSS Grid to structure the tabs and panels */
+.tabs {
+  display: grid;
+  /* grid-template-columns: 33% 33% 33%; */
+}
+
+[role="tablist"] {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(300px, 1fr));
+}
+
+[role="tabpanel"] {
+  background: white;
+  padding: 2rem;
+}

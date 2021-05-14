@@ -1,0 +1,49 @@
+// IN THE HTML:
+<div id="color-blocks"></div>
+
+// IN THE JS
+// Fisher-Yates (Knuth) Shuffle Algorithm
+function shuffle(array) {
+	let currentIndex = array.length;
+	let temporaryValue, randomIndex;
+	// While there remain elements to shuffle...
+	while (0 !== currentIndex) {
+		// Pick a remaining element...
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
+		// And swap it with the current element.
+		temporaryValue = array[currentIndex];
+		array[currentIndex] = array[randomIndex];
+		array[randomIndex] = temporaryValue;
+	}
+	return array;
+};
+
+// IN THE CSS:
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#color-blocks {
+    width: 600px;
+    margin: 100px auto 0;
+    // ADD FLEX: rows that wrap
+
+}
+.color {
+    // ADD: 150px black squares
+
+    // ADD: white 24px Verdana text w/ text shadow
+    
+    // ADD FLEX: text content centered
+
+    // adds animation to smooth out transition
+    transition: all .2s ease-in-out;
+}
+.color:hover {
+    // squares will grow on hover
+    transform: scale(1.1);
+}

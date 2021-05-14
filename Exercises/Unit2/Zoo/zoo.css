@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+/* STRUCTURE */
+body {
+  background-color: #372a07;
+  background: url(images/forest.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.container {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 1em 2em;
+  background-color: white;
+}
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "News Cycle", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  margin: 0.5em 0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #f58021;
+}
+a:active,
+a:hover {
+}
+h1 {
+  font-size: 48px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(12, 89, 75);
+}
+h3,
+h4 {
+  color: #372a07;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
+h4 {
+  margin: 0;
+}
+ul {
+  margin-top: 0.5em;
+}
+p,
+li,
+figcaption,
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #161101;
+}
+h3 + p {
+  font-style: italic;
+  margin-top: 0.5em;
+}
+p:nth-of-type(2) {
+  margin-bottom: 1.5em;
+}
+p:last-of-type {
+  font-style: italic;
+  margin-top: 1.5em;
+}
+/* PAGE */
+article {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  margin-bottom: 2em;
+}
+section {
+  padding: 0 1em;
+  flex: 1 1 275px;
+}
+figure {
+  margin: 0;
+  flex: 1 0 225px;
+}
+img {
+  width: 100%;
+  display: block;
+}
+figcaption {
+  background-color: #f58021;
+  padding: 1em;
+  color: white;
+  font-size: 14px;
+}
+button {
+  margin: 1.5em 0;
+  padding: 1em;
+  border: 1px solid #372a07;
+  border-radius: 4px;
+  background-color: floralwhite;
+}
+button:hover {
+  background-color: #372a07;
+  color: white;
+}
+button:action {
+  background-color: #f58021;
+  color: white;
+}

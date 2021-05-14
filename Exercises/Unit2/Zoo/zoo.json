@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Sampson",
+        "sex": "male",
+        "commonName": "Red Panda",
+        "scientificName": "Ailurus fulgens",
+        "diet": ["bamboo", "insects", "acorns", "eggs", "fruit"],
+        "age": 6,
+        "description": "The Red Panda is known for its bushy ringed tail, reddish-brown coat, and waddling gait. They are only distantly related to the better known black and white panda. These creatures are very well adapted to colder climates. Red pandas use their fluffy tails to wrap up in during winters in the mountains, and they even have fur on the pads of their feet to help keep them warm.",
+        "weight": 18,
+        "nativeRegion": ["Nepal", "Central China", "Russia"],
+        "conservationStatus": "endangered",
+        "url": "https://www.indianapoliszoo.com/exhibits/forests/red-panda/",
+        "sound": "red-panda-sound.ogg"
+    },
+    {
+        "name": "Metis",
+        "sex": "male",
+        "commonName": "Amur Tiger",
+        "scientificName": "Panthera tigris altaica",
+        "diet": ["wild boar", "sika deer", "red deer"],
+        "age": 4,
+        "description": "Amur tigers are distinguised by a reddish-rusty or rusty-yellow coat with narrow black diagonal stripes. No two tigers have the same stripe pattern. Tiger cubs stay with their mothers for up to three years, and are unable to hunt for themselves until they are 18 months old. Amur tigers are excellent swimmers.",
+        "weight": 310,
+        "nativeRegion": ["Russia"],
+        "conservationStatus": "endangered",
+        "url": "https://www.indianapoliszoo.com/exhibits/forests/amur-tiger/",
+        "sound": "tiger-sound.mp3"
+    },
+    {
+        "name": "Kiak",
+        "sex": "female",
+        "commonName": "Alaskan Brown Bear",
+        "scientificName": "Ursus arctos gyas",
+        "diet": ["nuts", "berries", "fruit", "leaves", "roots", "fish", "larger game"],
+        "age": 10,
+        "description": "Despite their name, Alaskan Brown Bears vary in color and can be distinguished from other bear species by a large hump of muscle mass between their shoulders. Mother bears give birth to cubs, typically twins, while still in their winter dens. The cubs stay with their mothers for over two years, growing in size and learning how to find food. A powerful sense of smell is important adaptation that helps bears locate food. Bears have been known to smell food from up to a mile away.",
+        "weight": 1200,
+        "nativeRegion": ["Coastal Alaska"],
+        "conservationStatus": "least concerned",
+        "url": "https://www.indianapoliszoo.com/exhibits/forests/alaskan-brown-bear/",
+        "sound": "bear-sound.mp3"
+    }
+]

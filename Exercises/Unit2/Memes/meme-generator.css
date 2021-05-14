@@ -1,0 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #34495e;
+  /* https://flatuicolors.com/ */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1.5em;
+}
+
+figure {
+  width: 250px;
+  padding: 1.0em;
+  margin: 0.5em;
+}
+
+img {
+  width: 100%;
+  border: 6px solid #34495e;
+}
+
+figcaption {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+
+/* Will need to add / remove the active class 
+   in your JS for this exercise */
+img:hover {
+  border: 6px solid gold;
+  cursor: pointer;
+}
+img.active {
+  border: 6px solid gold;
+}
+
+.make-meme {
+  display: table;
+}
+
+div.meme-text {
+  display: table-row;
+}
+
+label, input {
+  display: table-cell;
+  margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label {
+  padding-right: 10px;
+  color: white;
+}
+
+.meme-button {
+  width: 100%;
+  padding: 2.0em 0 3.0em;
+  text-align: center;
+}
+
+button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 15px 66px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.meme {
+  width: 600px;
+  height: 400px;
+  margin: 1.0em;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  margin: 0.35em 0;
+  color: white;
+  /* https://css-tricks.com/adding-stroke-to-web-text/ */
+  /* Will override color (regardless of order) - but leave color as backup */
+  -webkit-text-fill-color: white; 
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+h1 {
+  font-size: 64px;
+}
